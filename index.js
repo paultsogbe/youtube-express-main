@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   res.json("Welcome to the Youtube API");
 });
 
-const server = app.listen(process.env.PORT || 4000, () => {
+const server = app.listen(process.env.PORT || 3000, () => {
   console.log(`Server started`);
 });
 server.timeout = Number(process.env.SERVER_TIMEOUT) || 1000000;
